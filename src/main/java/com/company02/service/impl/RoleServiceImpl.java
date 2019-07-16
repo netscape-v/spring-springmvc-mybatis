@@ -14,4 +14,9 @@ public class RoleServiceImpl implements RoleService {
     public List<Role> findAll() {
         return mapper.findAll();
     }
+
+    @Override
+    public Integer addRole(Role role) {
+        return mapper.addRole(role);
+    }
 }

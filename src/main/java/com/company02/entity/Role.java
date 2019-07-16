@@ -11,4 +11,5 @@ public class Role {
     private String constellation;
     private Integer age;
     private String address;
+    private String image;
 }

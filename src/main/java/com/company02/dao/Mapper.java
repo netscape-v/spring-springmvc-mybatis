@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface Mapper {
     List<Role> findAll();
+
+    Integer addRole(Role role);
 }

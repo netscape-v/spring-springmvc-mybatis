@@ -2,10 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/indexShow.js"></script>
+    <style>
+        div{
+            border: black solid 0px;
+        }
+        #div1 {
+            width: 1340px;
+            height: 800px;
+            float: left;
+            background-image: url("image/02.jpg");
+            background-size: 100% auto;
+            background-position: center;
+
+        }
+        .div2 {
+            border: #FDC2B4 solid 1px;
+            width: 220px;
+            height: 300px;
+            float: left;
+            margin-left: 1px;
+            margin-top: 1px;
+        }
+        .div3 {
+            width: 108px;
+            height: 100px;
+            float: left;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        #head {
+            width: 1340px;
+            height: 100px;
+            text-align: center;
+            background-image: url("image/head.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: #F5E2F5 solid 1px;
+        }
+        #create {
+            width: 100px;
+            height: 30px;
+            float: right;
+            text-align: center;
+            border: #F5E2F5 solid 0px;
+        }
+        #title{
+            margin-top: 20px;
+            border: #F5E2F5 solid 0px;
+        }
+
+    </style>
 </head>
 <body>
- <span>整合三框架</span><br>
- <a href="role/list">跳转</a>
+<div id="head">
+    <div id="create">
+        <a href="singleImage.html" style="text-decoration: none;font-size: 22px;color: yellow"><b>添加妹子</b></a>
+    </div>
+    <div id="title">
+        <span style="color: deeppink;font-size: 40px;margin: 20px"><i style="margin-top: 20px">二次元萌妹子</i></span>
+    </div>
+</div>
+<div id="div1">
+    <div class="div2">
+        <div class="div3"><img src="image/01.jpg"></div>
+        <div class="div3">
+            <span><B>昵称:</B></span><br>
+            <span><B>年龄:</B></span><br>
+            <span><B>爱好:</B></span><br>
+            <span><B>星座:</B></span><br>
+        </div>
+        <span>第一个</span>
+        <span style="color: black">
+            二次元是一个ACGN亚文化圈专门用语，来自于日语的“二次元（にじげん）”，意思是“二维”。日本早期的动画、漫画、游戏等作品都是以二维图像构成，其画面是一个平面，所以通过这些载体创造的虚拟世界被动漫爱好者称为“二次元世界”。
+        </span>
+    </div>
+    <!--<div class="div2">
+        <div class="div3"><img src="image/01.jpg"></div>
+        <div class="div3">
+            <span><B>昵称:</B></span><br>
+            <span><B>年龄:</B></span><br>
+            <span><B>爱好:</B></span><br>
+            <span><B>星座:</B></span><br>
+        </div>
+        <span>第一个</span>
+        <span>
+            二次元是一个ACGN亚文化圈专门用语，来自于日语的“二次元（にじげん）”，意思是“二维”。日本早期的动画、漫画、游戏等作品都是以二维图像构成，其画面是一个平面，所以通过这些载体创造的虚拟世界被动漫爱好者称为“二次元世界”。
+        </span>
+    </div>-->
+
+</div>
 </body>
 </html>

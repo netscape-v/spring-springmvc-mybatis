@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#uploadId").change(function () {
+                var $file = $(this);
+                var objUrl = $file[0].files[0];
+                //获得一个http格式的url路径:mozilla(firefox)||webkit or chrome
+                var windowURL = window.URL || window.webkitURL;
+                //createObjectURL创建一个指向该参数对象(图片)的URL
+                var dataURL = windowURL.createObjectURL(objUrl);
+                $("#imageview").attr("src", dataURL);
+            });
+        });
+    </script>
+    <style>
+        #btn1 {
+            padding: 5px 10px;
+            background: #00b0f0;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<form action="/role/add" method="post" enctype="multipart/form-data">
+ <div>
+  <img id="imageview" width="100px" height="100px"/><br>
+   <input type="file" id="uploadId" name="files"><br>
+   <input type="text" name="nickname" placeholder="请输入妹子昵称"><br>
+   <input type="text" name="constellation" placeholder="请输入妹子的星座"><br>
+   <input type="text" name="age" placeholder="请输入妹子的芳龄"><br>
+   <input type="text" name="address" placeholder="请输入妹子的原产地"><br>
+   <button id="btn1" type="submit">提交</button><br>
+  <br>
+ </div>
+</form>
+</body>
+</html>

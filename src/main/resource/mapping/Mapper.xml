@@ -6,4 +6,7 @@
     <select id="findAll" resultType="role">
         select * from role
     </select>
+    <insert id="addRole" parameterType="role">
+        INSERT INTO role VALUES(NULL,#{nickname},#{constellation},#{age},#{address},#{image})
+    </insert>
 </mapper>
